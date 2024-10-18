@@ -5,7 +5,7 @@ data:
   dockerImageTag: 0.1.17
   dockerRepository: airbyte/destination-amazon-sqs
   githubIssueLabel: destination-amazon-sqs
-  icon: awssqs.svg
+  icon: icon.svg
   license: MIT
   name: Amazon SQS
   registryOverrides:
