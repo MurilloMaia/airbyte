@@ -41,8 +41,7 @@ class DestinationFirestore(Destination):
             if message.type == Type.STATE:
                 yield message
             elif message.type == Type.RECORD:
-                record = message.record
-                writer.write(record.stream, record.data)
+                writer.write(message.record)
             else:
                 # ignore other message types for now
                 continue

@@ -11,11 +11,11 @@
     "properties": {
       "queue_url": {
         "title": "Queue URL",
-        "description": "URL of the SQS Queue, you can use meta tags eg: ${NAMESPACE} and ${STREAM} to replace with the actual values from the stream",
+        "description": "URL of the SQS Queue, you can use meta tags eg: ${NAMESPACE} and ${STREAM} to replace with the actual values from the stream with a prefix of -",
         "type": "string",
         "examples": [
           "https://sqs.eu-west-1.amazonaws.com/1234567890/my-example-queue",
-          "https://sqs.eu-west-1.amazonaws.com/1234567890/my-example-queue-${NAMESPACE}-${STREAM}"
+          "https://sqs.eu-west-1.amazonaws.com/1234567890/my-example-queue${NAMESPACE}${STREAM} -> https://sqs.eu-west-1.amazonaws.com/1234567890/my-example-queue-namespace-stream"
         ],
         "order": 0
       },
